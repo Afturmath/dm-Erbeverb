@@ -20,15 +20,17 @@ The goal for this project was to investigate how to design a reverb algorithm. W
   - open the file in Ableton Live and start playing
 - Pisound / MODEP:
   - Copy the LV2 folder into your Raspberry Pi:
-    *scp -rp <location of the original dm-Erbeverb.lv2> modep@172.24.1.1:/usr/local/modep/.lv2*
+    *scp -rp \<path to the dm-Erbeverb.lv2 file\> modep@172.24.1.1:/usr/local/modep/.lv2*
   - Enter the password and your ready to go
   - If you don't have permissions to write to that location, change them
 
   - If you want to remove the plugin:
     - Connect to your Raspberry Pi via SSH:
+    
       *ssh modep@172.24.1.1*
     - Enter the password
     - Remove the plug-in
+    
       *rm -r /usr/local/modep/.lv2/dm-Erbeverb.lv2*
 
 ## License
