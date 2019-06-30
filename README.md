@@ -19,12 +19,10 @@ The goal for this project was to investigate how to design a reverb algorithm. W
 - Max For Live: 
   - open the file in Ableton Live and start playing
 - Pisound / MODEP:
-  - Copy the LV2 folder into your Raspberry Pi:
+  - Copy the LV2 folder into your Raspberry Pi (you might need to change permissions):
   
     *scp -rp \<path to the dm-Erbeverb.lv2 file\> modep@172.24.1.1:/usr/local/modep/.lv2*
-  - Enter the password and your ready to go
-  - If you don't have permissions to write to that location, change them
-
+  - Enter the password and you're ready to go
   - If you want to remove the plugin:
     - Connect to your Raspberry Pi via SSH:
     
