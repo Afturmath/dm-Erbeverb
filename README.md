@@ -8,17 +8,17 @@ This is an attempt to recreate the Make Noise reverb unit called [Erbe-Verb](htt
 - [License](#License)
 
 ## Description
-I designed this mono input/stereo output reverb in Max/MSP gen~ which is a C-like coding environment within Max/MSP that compiles to C++ code. It's efficient and gives you the control to build more sophisticated audio plug-ins. Since gen~ code can be compiled as C++ code the reverb can be compiled for use on the OWL Pedal, MOD Duo & [Pisound / MODEP](https://blokas.io/modep/). In this repository you can find the files needed to get the reverb plug-in running in [Max/MSP](./max-msp), [Ableton Live (Max For Live device)](./max-for-live) & [MODEP (LV2 plug-in)](./modep). You can see [here](./modep/src/gen_exported.cpp) what the compiled C++ code looks like.
+I designed this mono input/stereo output reverb in Max/MSP gen~ which is a C-like coding environment within Max/MSP that compiles to C++ code. It's efficient and gives you the control to build more sophisticated audio plug-ins. Since gen~ code can be compiled as C++ code the reverb can be compiled for use on the OWL Pedal, MOD Duo & [Pisound / MODEP](https://blokas.io/modep/). In this repository you can find the files needed to get the reverb plug-in running in Max/MSP, Ableton Live (Max For Live device) & MODEP (LV2 plug-in). You can see [here](./modep/src/gen_exported.cpp) what the compiled C++ code looks like.
 
 ## Goal
 The goal for this project was to investigate how to design a reverb algorithm. When I first heard the Erbe-Verb I was fascinated by the sound and the flexibility the device offers to change the characteristics of the simulated space. The article helped me out setting up the basic structure. Not all details are shared in the article, but I've given my best shot to get all the original features in and get it to be a nice sounding reverb.
 
 ## Install instructions
-- Max/MSP:
+- [Max/MSP](./max-msp):
   - open the file and start playing
-- Max For Live: 
+- [Max For Live](./max-for-live): 
   - open the file in Ableton Live and start playing
-- Pisound / MODEP:
+- [Pisound / MODEP](./modep):
   - Copy the LV2 folder into your Raspberry Pi (you might need to change permissions):
   
     *scp -rp \<path to the dm-Erbeverb.lv2 folder\> modep@172.24.1.1:/usr/local/modep/.lv2*
