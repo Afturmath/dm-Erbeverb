@@ -1,0 +1,99 @@
+/* = BACKGROUND IMAGE
+================================================ */
+.dm-Erbeverb{{{cns}}} {
+    background-image: url(/resources/pedals/erbeverb-bg.png{{{ns}}});
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:364px 431px;
+    height:431px;
+    position:absolute;
+    width:364px;
+    border-radius: 21px;
+}
+
+/* = LIGHT ON/OFF
+================================================ */
+.dm-Erbeverb{{{cns}}} .mod-light {
+    background-position:center center;
+    background-repeat:no-repeat;
+    height:32px;
+    left:10px;
+    position:absolute;
+    right:10px;
+    top:275px;
+}
+
+/* = FOOTSWITCH
+================================================ */
+.dm-Erbeverb{{{cns}}} .mod-footswitch {
+    background-image:url(/resources/pedals/footswitch.png{{{ns}}});
+    background-position:bottom center;
+    background-repeat:no-repeat;
+    background-size:auto 132px;
+    top: 320px;
+    bottom: 60px;
+    left: 13px;
+    right: 13px;
+    cursor:pointer;
+    height:66px;
+    width: 66px;
+    margin: auto;
+    position:absolute !important;
+}
+.dm-Erbeverb{{{cns}}} .mod-footswitch.on {
+    background-position-y: top !important
+}
+
+/* = SWITCH
+================================================ */
+.dm-Erbeverb{{{cns}}} .switch {
+    background-image:url(/resources/switches/dm-Switch.png{{{ns}}});
+    height: 42px;
+    position: absolute;
+    width: 42px;
+    top: 182px;
+    left: 39px;
+    z-index: 40;
+}
+
+/* = KNOBS
+================================================ */
+.dm-Erbeverb{{{cns}}} .knobs {
+    background-image: url(/resources/knobs/dm-Knob.png{{{ns}}});
+    height: 60px;
+    position: absolute;
+    width: 60px;
+    z-index: 40;
+}
+.dm-Erbeverb{{{cns}}} .knobs.size {
+    top: 91px;
+    left: 29px;
+}
+.dm-Erbeverb{{{cns}}} .knobs.speed {
+    top: 70px;
+    left: 91px;
+}
+.dm-Erbeverb{{{cns}}} .knobs.depth {
+    top: 156px;
+    left: 91px;
+}
+.dm-Erbeverb{{{cns}}} .knobs.predelay {
+    top: 70px;
+    left: 153px;
+}
+.dm-Erbeverb{{{cns}}} .knobs.tilt {
+    top: 156px;
+    left: 153px;
+}
+.dm-Erbeverb{{{cns}}} .knobs.absorb {
+    top: 70px;
+    left: 213px;
+}
+.dm-Erbeverb{{{cns}}} .knobs.decay {
+    top: 155px;
+    left: 213px;
+}
+.dm-Erbeverb{{{cns}}} .knobs.mix {
+    top: 50px;
+    left: 275px;
+}

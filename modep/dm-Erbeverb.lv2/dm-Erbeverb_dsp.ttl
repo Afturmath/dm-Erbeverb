@@ -1,0 +1,155 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix mod:  <http://moddevices.com/ns/mod#> .
+@prefix opts: <http://lv2plug.in/ns/ext/options#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsz:  <http://lv2plug.in/ns/ext/resize-port#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix epp: <http://lv2plug.in/ns/ext/port-props#> .
+
+<urn:maxgen:dm-Erbeverb>
+    a mod:MaxGenPlugin, lv2:Plugin ;
+
+    lv2:extensionData <http://lv2plug.in/ns/ext/state#interface> ;
+
+    lv2:optionalFeature <http://lv2plug.in/ns/ext/buf-size#boundedBlockLength> ;
+
+    lv2:requiredFeature <http://lv2plug.in/ns/ext/options#options> ,
+                        <http://lv2plug.in/ns/ext/urid#map> ;
+
+    opts:supportedOption <http://lv2plug.in/ns/ext/buf-size#nominalBlockLength> ,
+                         <http://lv2plug.in/ns/ext/buf-size#maxBlockLength> ,
+                         <http://lv2plug.in/ns/ext/parameters#sampleRate> ;
+
+    lv2:port [
+        a lv2:InputPort, lv2:AudioPort ;
+        lv2:index 0 ;
+        lv2:symbol "lv2_audio_in_1" ;
+        lv2:name "Audio Input 1" ;
+    ] ;
+
+    lv2:port [
+        a lv2:OutputPort, lv2:AudioPort ;
+        lv2:index 1 ;
+        lv2:symbol "lv2_audio_out_1" ;
+        lv2:name "Audio Output 1" ;
+    ] ,
+    [
+        a lv2:OutputPort, lv2:AudioPort ;
+        lv2:index 2 ;
+        lv2:symbol "lv2_audio_out_2" ;
+        lv2:name "Audio Output 2" ;
+    ] ;
+
+    lv2:port [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 3 ;
+        lv2:name "reverse" ;
+        lv2:symbol "reverse" ;
+	lv2:portProperty lv2:toggled ;
+        lv2:default 0.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 4 ;
+        lv2:name "size" ;
+        lv2:symbol "size" ;
+	lv2:portProperty epp:logarithmic ;
+        lv2:default 40.000000 ;
+        lv2:minimum 1.000000 ;
+        lv2:maximum 500.000000 ;
+	units:unit units:m ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 5 ;
+        lv2:name "speed" ;
+        lv2:symbol "speed" ;
+	lv2:portProperty epp:logarithmic ;
+        lv2:default 1.000000 ;
+        lv2:minimum 0.100000 ;
+        lv2:maximum 256.000000 ;
+	units:unit units:hz ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 6 ;
+        lv2:name "depth" ;
+        lv2:symbol "depth" ;
+        lv2:default 0.000000 ;
+        lv2:minimum -100.000000 ;
+        lv2:maximum 100.000000 ;
+	units:unit units:pc ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 7 ;
+        lv2:name "predelay" ;
+        lv2:symbol "predelay" ;
+	lv2:portProperty epp:logarithmic ;
+        lv2:default 7.000000 ;
+        lv2:minimum 7.000000 ;
+        lv2:maximum 500.000000 ;
+	units:unit units:ms ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 8 ;
+        lv2:name "tilt" ;
+        lv2:symbol "tilt" ;
+        lv2:default 0.000000 ;
+        lv2:minimum -100.000000 ;
+        lv2:maximum 100.000000 ;
+	units:unit units:pc ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 9 ;
+        lv2:name "absorb" ;
+        lv2:symbol "absorb" ;
+        lv2:default 30.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 100.000000 ;
+	units:unit units:pc ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 10 ;
+        lv2:name "decay" ;
+        lv2:symbol "decay" ;
+        lv2:default 85.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 120.000000 ;
+	units:unit units:pc ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 11 ;
+        lv2:name "mix" ;
+        lv2:symbol "mix" ;
+        lv2:default 50.000000 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 100.000000 ;
+	units:unit units:pc ;
+    ] ;
+
+    rdfs:comment """
+This plugin was automatically generated, based on a Max gen~ project file.
+""" ;
+
+    mod:brand "Max gen~" ;
+    mod:label "dm-Erbeverb" ;
+
+    doap:name "dm-Erbeverb" ;
+    doap:license "ISC" ;
+
+    doap:maintainer [
+        foaf:name "MOD Devices and Cycling '74" ;
+        foaf:homepage <https://github.com/moddevices/max-gen-skeleton> ;
+    ] ;
+
+    lv2:microVersion 0 ;
+    lv2:minorVersion 0 .
