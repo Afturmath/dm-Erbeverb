@@ -14,8 +14,10 @@ I designed this mono input/stereo output reverb in Max/MSP gen~ which is a C-lik
 The goal for this project was to investigate how to design a reverb algorithm. When I first heard the Erbe-Verb I was fascinated by the sound and the flexibility the device offers to change the characteristics of the simulated space. The article helped me out a great deal in learning how to build my first nice sounding reverb. There was still a lot work to figure out by myself, because the original creator didn't share all of his secrets of course...
 
 ## Install instructions
-- Max/MSP: open the file and start playing
-- Max For Live: open the file in Ableton Live and start playing
+- Max/MSP
+  - open the file and start playing
+- Max For Live: 
+  - open the file in Ableton Live and start playing
 - Pisound / MODEP:
   - Copy the LV2 folder into your Raspberry Pi:
     *scp -rp <location of the original dm-Erbeverb.lv2> modep@172.24.1.1:/usr/local/modep/.lv2*
@@ -27,7 +29,7 @@ The goal for this project was to investigate how to design a reverb algorithm. W
       *ssh modep@172.24.1.1*
     - Enter the password
     - Remove the plug-in
-      *rm -r /usr/local/modep/.lv2/dm-Erbeverb.lv2
+      *rm -r /usr/local/modep/.lv2/dm-Erbeverb.lv2*
 
 ## License
 Copyright: © 2015 Tom Erbe. This is code distributed under the terms of the Creative Commons Attribution License 3.0 Unported, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
