@@ -11,7 +11,7 @@ This is an attempt to recreate the Make Noise reverb unit called [Erbe-Verb](htt
 I designed this mono input/stereo output reverb in Max/MSP gen~ which is a C-like coding environment within Max/MSP that compiles to C++ code. It's efficient and gives you the control to build more sophisticated audio plug-ins. Since gen~ code can be compiled as C++ code the reverb can be compiled for use on the [OWL Pedal](https://www.rebeltech.org/product/owl-pedal/), [MOD Duo](https://www.moddevices.com/) & [Pisound / MODEP](https://blokas.io/modep/). In this repository you can find the files needed to get the reverb plug-in running in [Max/MSP](./max-msp), [Ableton Live (Max For Live device)](./max-for-live) & [MODEP (LV2 plug-in)](./modep). You can see [here](./modep/src/gen_exported.cpp) what the compiled C++ code looks like.
 
 ## Goal
-The goal for this project was to investigate how to design a reverb algorithm. When I first heard the Erbe-Verb I was fascinated by the sound and the flexibility the device offers to change the characteristics of the simulated space. The article helped me out a great deal in learning how to build my first nice sounding reverb. There was still a lot work to figure out by myself, because the original creator didn't share all of his secrets of course...
+The goal for this project was to investigate how to design a reverb algorithm. When I first heard the Erbe-Verb I was fascinated by the sound and the flexibility the device offers to change the characteristics of the simulated space. The article helped me out for setting up the basic structure. Not nearly all details are shared in the article, but I've given my best shot to get all the original features in and get it to be a nice sounding reverb.
 
 ## Install instructions
 - Max/MSP
