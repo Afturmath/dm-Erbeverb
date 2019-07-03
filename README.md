@@ -44,6 +44,3 @@ The goal for this project was to investigate how to design a reverb algorithm. W
 
 ## License
 Copyright: © 2015 Tom Erbe. This is code distributed under the terms of the Creative Commons Attribution License 3.0 Unported, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
-
-
-
