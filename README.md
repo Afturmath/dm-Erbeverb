@@ -26,7 +26,7 @@ The goal for this project was to investigate how to design a reverb algorithm. W
   - Copy the LV2 folder into your Raspberry Pi (you might need to change permissions):
   
     ```
-    $ scp -rp \<path to the dm-Erbeverb.lv2 folder\> modep@172.24.1.1:/usr/local/modep/.lv2
+    $ scp -rp <path to the dm-Erbeverb.lv2 folder> modep@172.24.1.1:/usr/local/modep/.lv2
     ```
   - Enter your password and you're ready to go
   - If you want to remove the plugin:
