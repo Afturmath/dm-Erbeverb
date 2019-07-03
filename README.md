@@ -1,5 +1,5 @@
 ## dm-Erbeverb
-![demo](http://www.giphy.com/gifs/llrmivpom8WzVyY53h)
+![demo](https://gph.is/g/aRmR35J)
 
 This is an attempt to recreate the Make Noise reverb unit called [Erbe-Verb](http://www.makenoisemusic.com/modules/erbe-verb). The reverb algorithm is invented by [Tom Erbe](http://www.soundhack.com/). The reverb design I made is based on this [article](https://quod.lib.umich.edu/cgi/p/pod/dod-idx/building-the-erbe-verb-extending-the-feedback-delay-network.pdf?c=icmc;idno=bbp2372.2015.054;format=pdf) that he wrote.
 
