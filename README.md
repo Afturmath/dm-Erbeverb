@@ -25,16 +25,22 @@ The goal for this project was to investigate how to design a reverb algorithm. W
 - [Pisound / MODEP](./modep):
   - Copy the LV2 folder into your Raspberry Pi (you might need to change permissions):
   
-    *scp -rp \<path to the dm-Erbeverb.lv2 folder\> modep@172.24.1.1:/usr/local/modep/.lv2*
+    ```
+    $ scp -rp \<path to the dm-Erbeverb.lv2 folder\> modep@172.24.1.1:/usr/local/modep/.lv2
+    ```
   - Enter your password and you're ready to go
   - If you want to remove the plugin:
     - Connect to your Raspberry Pi via SSH:
     
-      *ssh modep@172.24.1.1*
+      ```
+      $ ssh modep@172.24.1.1
+      ```
     - Enter your password
     - Remove the plug-in:
     
-      *rm -r /usr/local/modep/.lv2/dm-Erbeverb.lv2*
+      ```
+      $ rm -r /usr/local/modep/.lv2/dm-Erbeverb.lv2
+      ```
 
 ## License
 Copyright: © 2015 Tom Erbe. This is code distributed under the terms of the Creative Commons Attribution License 3.0 Unported, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
